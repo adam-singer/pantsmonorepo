@@ -1,0 +1,8 @@
+.cache
+.idea
+.pants.d
+.pants.workdir*
+.pids
+access.log
+dist
+twitterserver.log

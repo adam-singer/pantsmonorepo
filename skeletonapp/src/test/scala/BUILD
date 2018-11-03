@@ -1,0 +1,20 @@
+junit_tests(
+    compiler_option_sets={"fatal_warnings"},
+    dependencies=[
+        '3rdparty/jvm/ch/qos/logback:logback-classic',
+        '3rdparty/jvm/com/google/inject/extensions:guice-testlib',
+        '3rdparty/jvm/com/twitter/finagle:finagle-stats',
+        '3rdparty/jvm/com/twitter/inject:inject-app-tests',
+        '3rdparty/jvm/com/twitter/inject:inject-core-tests',
+        '3rdparty/jvm/com/twitter/inject:inject-modules',
+        '3rdparty/jvm/com/twitter/inject:inject-modules-tests',
+        '3rdparty/jvm/com/twitter/inject:inject-server',
+        '3rdparty/jvm/com/twitter/inject:inject-server-tests',
+        '3rdparty/jvm/org/mockito:mockito-all',
+        '3rdparty/jvm/org/scalatest:scalatest',
+        'skeletonapp/src/main/resources',
+        'skeletonapp/src/main/scala',
+    ],
+    sources=rglobs('*.scala'),
+    strict_deps=True,
+)
